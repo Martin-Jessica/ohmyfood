@@ -1,0 +1,17 @@
+:root {
+    --main-bg-color: #F3F3F3;
+    --main-linear-color: linear-gradient(#FF79DA #9356DC);
+    --main-green-color: #99E2D0;
+    --main-purple-color: #9356DC;
+    --main-green-font: #008766;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
