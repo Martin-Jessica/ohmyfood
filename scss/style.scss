@@ -6,7 +6,7 @@ $gradient-end: #9356DC;
 $grey-dark-color: #353535;
 $drop-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
-@import 'btn', 'footer', 'header', 'restaurant', 'homepage';
+@import 'btn', 'footer', 'header', 'restaurant', 'homepage', 'navrestaurant';
 
 * {
     box-sizing: border-box;
@@ -18,8 +18,15 @@ $drop-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     filter: $drop-shadow;
 }
 
+.card {
+    background-color: $card-color;
+    border-radius: 20px;
+}
+
 .homepage-title {
     font-family: 'roboto', sans-serif;
     font-size: 24px;
     font-weight: 700;
 }
+
+

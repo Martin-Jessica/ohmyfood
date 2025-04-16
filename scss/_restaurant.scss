@@ -7,6 +7,11 @@
     padding: 10px;
     gap: 18px;
 
+    .restaurant-card {
+        background-color: $primary-color ;
+        border-radius: 20px;
+    }
+
     .card {
         display: flex;
         flex-direction: column;
