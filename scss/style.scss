@@ -1,0 +1,25 @@
+
+$primary-color: #F6F6F6;
+$card-color: #FFFFFF;
+$gradient-start: #FF79DA;
+$gradient-end: #9356DC;
+$grey-dark-color: #353535;
+$drop-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+@import 'btn', 'footer', 'header', 'restaurant', 'homepage';
+
+* {
+    box-sizing: border-box;
+}
+
+.card-info {
+    background-color: $card-color;
+    border-radius: 20px;
+    filter: $drop-shadow;
+}
+
+.homepage-title {
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}

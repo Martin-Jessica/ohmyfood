@@ -1,0 +1,23 @@
+.footer {
+    background-color: $grey-dark-color;
+    color: $card-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 22px 25px 22px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "roboto";
+    
+
+        .footer-title {
+            font-family: "Shrikhand", serif ;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        a { 
+            color: inherit;
+            text-decoration: none;
+        }
+
+}

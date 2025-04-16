@@ -1,0 +1,14 @@
+.btn {
+    padding: 0px 15px 0px 5px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, $gradient-start,$gradient-end);
+    color: $card-color;
+    font-size: 16px;
+    font-family: 'roboto', sans-serif;
+    filter: $drop-shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
