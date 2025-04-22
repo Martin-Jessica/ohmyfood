@@ -1,0 +1,22 @@
+.header .header-title {
+    font-family: "Shrikhand", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .nav {
+    background-color: $base-color;
+  }
+
+  .header .search {
+    border: none;
+  }
+  
+  .header .fa-solid {
+    color: black;
+  }
+
+  .header {
+    gap:15px;
+  }

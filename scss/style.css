@@ -1,25 +1,30 @@
-.footer {
-  background-color: #353535;
+* {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+.btn {
+  padding: 0px 15px 0px 5px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 25px 22px 25px 22px;
   font-size: 16px;
-  font-weight: 500;
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer .footer-title {
-  font-family: "Shrikhand", serif;
-  font-size: 18px;
-  font-weight: 400;
+
+.card-info {
+  background-color: #FFFFFF;
+  border-radius: 20px;
 }
-.footer a {
-  color: inherit;
-  text-decoration: none;
-}
-.footer .fa-solid {
-  color: #FFFFFF;
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
 }
 
 .header .header-title {
@@ -28,14 +33,21 @@
   justify-content: center;
   align-items: center;
 }
+
 .header .nav {
-  background-color: #F6F6F6;
+  background-color: #F3F3F3;
 }
+
 .header .search {
   border: none;
 }
+
 .header .fa-solid {
   color: black;
+}
+
+.header {
+  gap: 15px;
 }
 
 .presentation {
@@ -47,10 +59,13 @@
   text-align: center;
   background-color: #F6F6F6;
   padding-bottom: 27px;
+  gap: 15px;
 }
+
 .presentation p {
   font-size: 18px;
 }
+
 .presentation .btn {
   display: flex;
   flex-wrap: nowrap;
@@ -63,11 +78,14 @@
   flex-direction: column;
   font-family: "roboto", sans-serif;
   font-weight: 500;
+  gap: 15px;
+  padding: 10px;
 }
 
 .info {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 ol {
@@ -75,6 +93,7 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   gap: 15px;
+  list-style-type: none;
 }
 
 li, .card {
@@ -82,15 +101,22 @@ li, .card {
   padding: 20px;
 }
 
-.btn {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+li {
+  position: relative;
 }
 
-.fa-solid {
-  color: #9356DC;
+ol::before {
+  content: counter(list-item);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #9356DC;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .restaurant {
@@ -101,18 +127,19 @@ li, .card {
   padding: 10px;
   gap: 18px;
 }
+
 .restaurant .restaurant-card {
   background-color: #F6F6F6;
   border-radius: 20px;
 }
+
 .restaurant .card {
-  display: flex;
-  flex-direction: column;
   font-family: "roboto", sans-serif;
   background-color: #FFFFFF;
   border-radius: 25px;
   padding: 0px;
 }
+
 .restaurant .card img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -120,23 +147,91 @@ li, .card {
   height: 174px;
   border-radius: 20px 20px 0px 0px;
 }
+
 .restaurant .card .card-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px;
+  padding: 15px;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .restaurant .card .h3 {
   font-size: 18px;
   font-weight: 700;
 }
+
 .restaurant .card .p {
   font-size: 17px;
   font-weight: 300;
 }
 
-nav img {
+.fa-heart {
+  width: 22px;
+  height: 21px;
+}
+
+.footer {
+  background-color: #353535;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 22px 25px 22px;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 10px;
+}
+
+.footer .footer-title {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer .fa-solid {
+  color: #FFFFFF;
+}
+
+img {
   width: 100%;
   height: 275px;
+}
+
+.la-palette-du-gout {
+  gap: 15px;
+}
+.la-palette-du-gout .entrees {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.la-palette-du-gout .plats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.la-palette-du-gout .dessert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.la-palette-du-gout .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

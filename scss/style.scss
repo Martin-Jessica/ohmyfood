@@ -1,13 +1,14 @@
+@import 'bases/variables';
 
-@import 'bases';
+@import 'bases/btn';
 
-@import 'color';
+@import 'bases/card';
 
-@import 'footer';
+@import 'homepage/header';
 
-@import 'headerhome';
+@import 'homepage/main';
 
-@import 'mainhome';
+@import 'footer/footer';
 
-@import 'navrestaurant';
 
+@import 'lapalettedugoutpage/main';
