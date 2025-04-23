@@ -5,7 +5,7 @@
     align-items: center;
   }
 
-  .header .nav {
+  .header {
     background-color: $base-color;
   }
 
@@ -20,3 +20,17 @@
   .header {
     gap:15px;
   }
+
+ .nav {
+  display: flex;
+  justify-content: center;
+  background-color: $dark-grey;
+  
+    #location {
+      border: none;
+      height: 50px;
+      background-color: $dark-grey;
+    }
+  
+  }
+  

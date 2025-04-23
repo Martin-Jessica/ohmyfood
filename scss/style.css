@@ -1,6 +1,7 @@
 * {
   margin: 0;
   font-family: "roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 .btn {
@@ -34,7 +35,7 @@
   align-items: center;
 }
 
-.header .nav {
+.header {
   background-color: #F3F3F3;
 }
 
@@ -50,6 +51,17 @@
   gap: 15px;
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+}
+.nav #location {
+  border: none;
+  height: 50px;
+  background-color: #EAEAEA;
+}
+
 .presentation {
   display: flex;
   flex-direction: column;
@@ -58,15 +70,13 @@
   font-family: "roboto", sans-serif;
   text-align: center;
   background-color: #F6F6F6;
-  padding-bottom: 27px;
+  padding: 20px;
   gap: 15px;
 }
-
-.presentation p {
+.presentation .presentation p {
   font-size: 18px;
 }
-
-.presentation .btn {
+.presentation .presentation .btn {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -79,41 +89,38 @@
   font-family: "roboto", sans-serif;
   font-weight: 500;
   gap: 15px;
-  padding: 10px;
+  padding: 15px;
 }
-
-.info {
+.fonctionnement .info {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-ol {
+.fonctionnement ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 15px;
   list-style-type: none;
+  width: 100%;
 }
-
-li, .card {
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+.fonctionnement li {
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
   padding: 20px;
 }
-
-li {
+.fonctionnement li {
   position: relative;
 }
-
-ol::before {
+.fonctionnement li::before {
   content: counter(list-item);
   position: absolute;
   top: 50%;
   left: 0;
+  transform: translate(-50%, -50%);
   height: 20px;
   width: 20px;
   background-color: #9356DC;
-  border-radius: 50px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;

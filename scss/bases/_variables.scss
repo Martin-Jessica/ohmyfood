@@ -4,9 +4,11 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $dark-color: #353535;
-$drop-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+$dark-grey: #EAEAEA;
+$drop-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
 
 * {
     margin: 0;
     font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
 }
