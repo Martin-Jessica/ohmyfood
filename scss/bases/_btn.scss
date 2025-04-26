@@ -3,11 +3,15 @@
     height: 50px;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    background: $linear-gradient;
     color: $card-color;
     font-size: 16px;
     font-family: 'roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }

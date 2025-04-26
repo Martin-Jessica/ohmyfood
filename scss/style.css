@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.heart-hover {
+  font-size: 22px;
+  transition: color 0.3s;
+}
+.heart-hover .heart-hover:hover {
+  color: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
+
 .btn {
   padding: 0px 15px 0px 5px;
   height: 50px;
@@ -16,6 +24,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 .card-info {
@@ -37,18 +49,13 @@
 
 .header {
   background-color: #F3F3F3;
+  gap: 15px;
 }
-
-.header .search {
+.header .header .search {
   border: none;
 }
-
-.header .fa-solid {
-  color: black;
-}
-
-.header {
-  gap: 15px;
+.header .header .fa-solid {
+  color: #353535;
 }
 
 .nav {
@@ -60,6 +67,9 @@
   border: none;
   height: 50px;
   background-color: #EAEAEA;
+}
+.nav #placeholder {
+  color: #353535;
 }
 
 .presentation {
@@ -124,6 +134,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #FFFFFF;
+}
+.fonctionnement .fa-solid {
+  color: #9356DC;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .restaurant {
@@ -145,6 +161,7 @@
   background-color: #FFFFFF;
   border-radius: 25px;
   padding: 0px;
+  position: relative;
 }
 
 .restaurant .card img {
@@ -179,9 +196,17 @@
   font-weight: 300;
 }
 
-.fa-heart {
-  width: 22px;
-  height: 21px;
+.new {
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .footer {
@@ -211,34 +236,68 @@
   color: #FFFFFF;
 }
 
+.header-restaurant {
+  display: flex;
+  flex-direction: row;
+  height: 63px;
+}
+.header-restaurant .arrow-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-restaurant .header-title {
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  margin-left: 60px;
+}
+.header-restaurant .arrow {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-restaurant .arrow .fa-arrow-left {
+  color: #353535;
+  font-size: 16px;
+}
+
 img {
   width: 100%;
   height: 275px;
 }
 
-.la-palette-du-gout {
-  gap: 15px;
-}
-.la-palette-du-gout .entrees {
+.restaurant-card {
+  background-color: #F3F3F3;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: center;
+  padding: 5px;
+  gap: 40px;
+  border-radius: 25%;
 }
-.la-palette-du-gout .plats {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+.restaurant-card .restaurant-name {
+  font-family: "shrikhand", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
 }
-.la-palette-du-gout .dessert {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+.restaurant-card .menu-title {
+  font-size: 16px;
+  font-weight: 300;
+  border-bottom: 3px #99E2D0 solid;
 }
-.la-palette-du-gout .card {
+.restaurant-card .card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.restaurant-card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+}
+.restaurant-card .entrees {
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */

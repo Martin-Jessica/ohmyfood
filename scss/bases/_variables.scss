@@ -3,12 +3,23 @@ $card-color: #FFFFFF;
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+$green-font: #008766;
 $dark-color: #353535;
 $dark-grey: #EAEAEA;
+$linear-gradient: linear-gradient(to bottom, $secondary-color, $primary-color);
 $drop-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
 
 * {
     margin: 0;
     font-family: 'roboto', sans-serif;
     box-sizing: border-box;
+}
+
+.heart-hover {
+    font-size: 22px;
+    transition: color 0.3s;
+
+    .heart-hover:hover {
+        color: $linear-gradient;
+    }
 }
