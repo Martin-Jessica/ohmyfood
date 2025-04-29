@@ -4,13 +4,12 @@ img {
 }
     
 .restaurant-card {
+    @include column-card;
     background-color: $base-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     gap: 40px;
-    border-radius: 25%;
+    
     
     .restaurant-name {
         font-family: 'shrikhand', sans-serif;
@@ -27,13 +26,10 @@ img {
     }
 
     .card {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include row-card;
         align-items: center;
-        
-        
     }
+
     .card-content {
         display: flex;
         flex-direction: column;
@@ -43,7 +39,9 @@ img {
 
     }
 
-    .entrees {
-        gap: 20px;
+    .entrees, .plats, .desserts {
+        gap: 10px;
+        @include column-card;
     }
+
 }

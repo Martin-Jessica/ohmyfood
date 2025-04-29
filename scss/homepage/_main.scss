@@ -1,9 +1,7 @@
 
 .presentation {
-    display: flex;
+    @include center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: "roboto", sans-serif;
     text-align: center;
     background-color: #F6F6F6;
@@ -14,10 +12,8 @@
         font-size: 18px;
       }
         .presentation .btn {
-          display: flex;
+          @include center;
           flex-wrap: nowrap;
-          justify-content: center;
-          align-items: center;
         }
   }
   
@@ -31,16 +27,11 @@
     padding: 15px;
 
       .info {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+        @include center;
       }
       
       ol {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include column-card;
         gap: 15px;
         list-style-type: none;
         width: 100%;
@@ -65,9 +56,7 @@
         width: 20px;
         background-color: $primary-color;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         color: $card-color;
       }
 
@@ -94,7 +83,6 @@
   }
 
   .restaurant .card {
-    font-family: "roboto", sans-serif;
     background-color: #FFFFFF;
     border-radius: 25px;
     padding: 0px;
@@ -109,10 +97,9 @@
   }
 
   .restaurant .card .card-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include row-card;
     align-items: flex-start;
+
     padding: 10px;
     padding: 15px;
   }

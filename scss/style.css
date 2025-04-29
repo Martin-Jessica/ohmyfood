@@ -74,9 +74,9 @@
 
 .presentation {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-family: "roboto", sans-serif;
   text-align: center;
   background-color: #F6F6F6;
@@ -88,9 +88,9 @@
 }
 .presentation .presentation .btn {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .fonctionnement {
@@ -103,8 +103,8 @@
 }
 .fonctionnement .info {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .fonctionnement ol {
   display: flex;
@@ -157,7 +157,6 @@
 }
 
 .restaurant .card {
-  font-family: "roboto", sans-serif;
   background-color: #FFFFFF;
   border-radius: 25px;
   padding: 0px;
@@ -268,13 +267,13 @@ img {
 }
 
 .restaurant-card {
-  background-color: #F3F3F3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 5px;
+  justify-content: space-between;
+  background-color: #F3F3F3;
+  padding-left: 5px;
+  padding-right: 5px;
   gap: 40px;
-  border-radius: 25%;
 }
 .restaurant-card .restaurant-name {
   font-family: "shrikhand", sans-serif;
@@ -298,6 +297,9 @@ img {
   gap: 5px;
   padding: 15px;
 }
-.restaurant-card .entrees {
-  gap: 20px;
+.restaurant-card .entrees, .restaurant-card .plats, .restaurant-card .desserts {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
