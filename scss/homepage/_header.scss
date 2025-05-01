@@ -20,17 +20,11 @@
 
 .nav {
   display: flex;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  gap: 17px;
+  padding: 15px;
   background-color: $dark-grey;
-  
-    #location {
-      border: none;
-      height: 50px;
-      background-color: $dark-grey;
-    }
-    
-    #placeholder {
-      color: $dark-color;
-    }
 }
   
