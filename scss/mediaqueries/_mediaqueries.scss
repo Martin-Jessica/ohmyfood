@@ -1,0 +1,72 @@
+/** media queries desktop version)**/
+
+@media screen and (min-width: 1024px) {
+
+
+    .header-title {
+        font-size: 34px;
+        height: 96px;
+    }
+
+    .presentation {
+        gap: 30px;
+        font-size: 18px;
+        
+        .homepage-title {
+            font-size: 40px;
+        }
+    }
+
+    .fonctionnement {
+        margin: 50px;
+        gap: 25px;
+           
+        .homepage-title {
+            font-size: 24px;
+        }
+
+        ol {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between ;
+            width: 100%;
+            gap: 50px;
+
+        }
+
+        .card-info {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: center;
+            width: 100%;
+            
+
+            .fa-solid {
+                padding-right: 25px;
+            }
+        }
+    }
+
+    .restaurant {
+        padding: 50px;
+
+
+        .card {
+            flex-wrap: wrap;
+            width: calc(100% / 2);
+        }
+    }
+    
+    .footer {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+
+        .direction-footer {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+}

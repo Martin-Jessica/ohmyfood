@@ -9,7 +9,35 @@ img {
     padding-left: 5px;
     padding-right: 5px;
     gap: 40px;
+    position: relative;
+    transition: all 0.3s;
     
+    .checkmark {
+        color: $card-color;
+    }
+
+    .checkmark {
+        background: linear-gradient(to right, #99e2d0, #66d2c8);
+        color: white;
+        border-radius: 0 15px 15px 0;
+        padding: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        transform: translateX(100%); 
+        opacity: 0;
+        width: 60px;
+      }
+      
+      .card:hover .checkmark {
+        transform: translateX(0); 
+        opacity: 1;
+      }
+      
+      .checkmark i {
+        font-size: 18px;
+      }
     
     .restaurant-name {
         font-family: 'shrikhand', sans-serif;
@@ -43,5 +71,7 @@ img {
         gap: 10px;
         @include column-card;
     }
+
+    
 
 }
