@@ -247,70 +247,66 @@
   color: #FFFFFF;
 }
 
-.header-restaurant {
-  display: flex;
-  flex-direction: row;
-  height: 63px;
-}
-.header-restaurant .arrow-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.header-restaurant .header-title {
-  font-family: "Shrikhand", serif;
-  font-size: 30px;
-  margin-left: 60px;
-}
 .header-restaurant .arrow {
-  padding: 30px;
-  display: flex;
-  justify-content: flex-start;
+  position: absolute;
+  top: 15px;
+  left: 25px;
 }
 .header-restaurant .arrow .fa-arrow-left {
   color: #353535;
-  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.header-restaurant .header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shrikhand", serif;
+  text-align: center;
+  font-size: 30px;
 }
 
 img {
   width: 100%;
-  height: 275px;
 }
 
 .restaurant-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-top: 25%;
+  border-radius: 25px;
   background-color: #F3F3F3;
   padding-left: 5px;
   padding-right: 5px;
-  gap: 40px;
-  position: relative;
   transition: all 0.3s;
 }
-.restaurant-card .checkmark {
-  color: #FFFFFF;
+.restaurant-card .heart {
+  position: absolute;
+}
+.restaurant-card .heart.top-right {
+  left: auto;
+  right: 25px;
 }
 .restaurant-card .checkmark {
   background: linear-gradient(to right, #99e2d0, #66d2c8);
-  color: white;
+  color: #FFFFFF;
   border-radius: 0 15px 15px 0;
-  padding: 29px;
+  width: 0;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.75s ease;
   transform: translateX(100%);
   opacity: 0;
-  width: 60px;
+}
+.restaurant-card .checkmark .checkmark i {
+  font-size: 18px;
 }
 .restaurant-card .card:hover .checkmark {
   transform: translateX(0);
   opacity: 1;
-}
-.restaurant-card .checkmark i {
-  font-size: 18px;
+  width: 60px;
+  transition: transform 0.75s ease;
 }
 .restaurant-card .restaurant-name {
   font-family: "shrikhand", sans-serif;
@@ -327,11 +323,17 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 72px;
 }
 .restaurant-card .card-content {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 5px;
+  padding: 15px;
+  overflow: hidden;
+}
+.restaurant-card .price {
   padding: 15px;
 }
 .restaurant-card .entrees, .restaurant-card .plats, .restaurant-card .desserts {
@@ -339,6 +341,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.restaurant-card h3 {
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /** media queries desktop version)**/
@@ -355,7 +362,11 @@ img {
     font-size: 40px;
   }
   .fonctionnement {
-    margin: 50px;
+    margin: auto;
+    padding-right: 180px;
+    padding-left: 180px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     gap: 25px;
   }
   .fonctionnement .homepage-title {
@@ -380,18 +391,39 @@ img {
     padding-right: 25px;
   }
   .restaurant {
-    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 180px;
+    padding-left: 180px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    gap: 50px;
+  }
+  .restaurant .homepage-title {
+    width: 100%;
   }
   .restaurant .card {
-    flex-wrap: wrap;
-    width: 50%;
+    width: calc((100% - 50px) / 2);
+  }
+  .header-restaurant {
+    height: 96px;
+  }
+  .arrow {
+    position: absolute;
+    top: 25px;
+    left: 25px;
   }
   .footer {
     flex-direction: row-reverse;
     justify-content: flex-start;
+    gap: 50px;
   }
   .footer .direction-footer {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

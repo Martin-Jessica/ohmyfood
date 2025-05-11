@@ -1,43 +1,51 @@
 img {
     width: 100%;
-    height: 275px;
+
 }
     
 .restaurant-card {
-    @include column-card;
+    margin-top: 25%;
+    border-radius: 25px;
     background-color: $base-color;
     padding-left: 5px;
     padding-right: 5px;
-    gap: 40px;
-    position: relative;
     transition: all 0.3s;
-    
-    .checkmark {
-        color: $card-color;
-    }
+
+    .heart {
+        position: absolute;
+
+            &.top-right {
+                left: auto;
+                right: 25px;
+            }
+        }
+
 
     .checkmark {
         background: linear-gradient(to right, #99e2d0, #66d2c8);
-        color: white;
+        color: $card-color;
         border-radius: 0 15px 15px 0;
-        padding: 29px;
+        width: 0;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: transform 0.3s ease;
+        transition: transform 0.75s ease;
         transform: translateX(100%); 
         opacity: 0;
-        width: 60px;
+            .checkmark i {
+            font-size: 18px;
+        }
       }
       
       .card:hover .checkmark {
         transform: translateX(0); 
         opacity: 1;
+        width: 60px;
+        transition: transform 0.75s ease;
       }
       
-      .checkmark i {
-        font-size: 18px;
-      }
+      
     
     .restaurant-name {
         font-family: 'shrikhand', sans-serif;
@@ -56,15 +64,21 @@ img {
     .card {
         @include row-card;
         align-items: center;
+        height: 72px;
     }
 
     .card-content {
         display: flex;
+        flex: 1;
         flex-direction: column;
         gap: 5px;
         padding: 15px;
+        overflow: hidden;
         
-
+    }
+    
+     .price {
+        padding: 15px;
     }
 
     .entrees, .plats, .desserts {
@@ -72,6 +86,10 @@ img {
         @include column-card;
     }
 
-    
+    h3 {
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
 }

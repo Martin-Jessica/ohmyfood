@@ -18,7 +18,11 @@
     }
 
     .fonctionnement {
-        margin: 50px;
+        margin: auto;
+        padding-right: 180px;
+        padding-left: 180px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         gap: 25px;
            
         .homepage-title {
@@ -42,7 +46,6 @@
             align-items: center;
             width: 100%;
             
-
             .fa-solid {
                 padding-right: 25px;
             }
@@ -50,23 +53,45 @@
     }
 
     .restaurant {
-        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 180px;
+        padding-left: 180px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: auto;
+        gap: 50px;
 
+        .homepage-title {
+            width: 100%;
+        }
 
         .card {
-            flex-wrap: wrap;
-            width: calc(100% / 2);
+
+            width: calc((100% - 50px) / 2);
         }
+    }
+    
+    .header-restaurant {
+        height: 96px;
+    }
+    .arrow {
+        position: absolute;
+        top: 25px;
+        left: 25px;
     }
     
     .footer {
         flex-direction: row-reverse;
         justify-content: flex-start;
+        gap: 50px;
 
         .direction-footer {
+            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            gap: 15px;
         }
     }
-
 }

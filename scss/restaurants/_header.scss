@@ -1,31 +1,32 @@
 .header-restaurant {
-    display: flex;
-    flex-direction: row;
-    height: 63px;
-        
-        .arrow-menu {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            
-        }
-        .header-title {
-            font-family: "Shrikhand", serif;
-            font-size: 30px;
-            margin-left: 60px;
-        }
+
 
         .arrow {
-            padding: 30px;
-            display: flex;
-            justify-content: flex-start;
+            position: absolute;
+            top: 15px;
+            left: 25px;
             
             .fa-arrow-left {
                 color: $dark-color;
-                font-size: 16px;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+
+
             }
         }
+
+        .header-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Shrikhand", serif;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        
 }
         
     
