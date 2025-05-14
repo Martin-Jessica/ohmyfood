@@ -63,12 +63,13 @@
         margin: auto;
         gap: 50px;
 
+        
+
         .homepage-title {
             width: 100%;
         }
 
         .card {
-
             width: calc((100% - 50px) / 2);
         }
     }
@@ -81,11 +82,36 @@
         top: 25px;
         left: 25px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     .footer {
         flex-direction: row-reverse;
         justify-content: flex-start;
         gap: 50px;
+
 
         .direction-footer {
             display: flex;
@@ -94,4 +120,8 @@
             gap: 15px;
         }
     }
+
+    
+
+
 }

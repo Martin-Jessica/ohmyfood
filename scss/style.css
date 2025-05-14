@@ -42,6 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2));
 }
 
 .btn:hover {
@@ -63,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -84,6 +86,7 @@
   gap: 17px;
   padding: 15px;
   background-color: #EAEAEA;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
 }
 
 .presentation {
@@ -95,10 +98,11 @@
   text-align: center;
   background-color: #F6F6F6;
   padding: 20px;
-  gap: 15px;
+  gap: 25px;
 }
 .presentation .presentation p {
   font-size: 18px;
+  font-weight: 300;
 }
 .presentation .presentation .btn {
   display: flex;
@@ -110,9 +114,9 @@
 .fonctionnement {
   display: flex;
   flex-direction: column;
+  gap: 25px;
   font-family: "roboto", sans-serif;
   font-weight: 500;
-  gap: 15px;
   padding: 15px;
 }
 .fonctionnement .info {
@@ -124,13 +128,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 15px;
+  gap: 25px;
   list-style-type: none;
   width: 90%;
   padding: 0;
 }
 .fonctionnement li {
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2));
   padding: 20px;
 }
 .fonctionnement li {
@@ -162,8 +166,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
-  gap: 18px;
+  padding: 15px;
+  gap: 20px;
 }
 
 .restaurant .restaurant-card {
@@ -231,6 +235,7 @@
   font-size: 16px;
   font-weight: 500;
   gap: 10px;
+  width: 100%;
 }
 .footer .footer-title {
   font-family: "Shrikhand", serif;
@@ -269,15 +274,22 @@
 
 img {
   width: 100%;
+  height: 275px;
 }
 
 .restaurant-card {
-  margin-top: 25%;
-  border-radius: 25px;
+  margin-top: -15%;
+  border-radius: 25px 25px 0 0;
   background-color: #F3F3F3;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   transition: all 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 40px;
 }
 .restaurant-card .heart {
   position: absolute;
@@ -285,6 +297,7 @@ img {
 .restaurant-card .heart.top-right {
   left: auto;
   right: 25px;
+  top: 30px;
 }
 .restaurant-card .checkmark {
   background: linear-gradient(to right, #99e2d0, #66d2c8);
@@ -299,6 +312,9 @@ img {
   transform: translateX(100%);
   opacity: 0;
 }
+.restaurant-card .checkmark .price {
+  transition: transform 0.75s ease;
+}
 .restaurant-card .checkmark .checkmark i {
   font-size: 18px;
 }
@@ -309,9 +325,15 @@ img {
   transition: transform 0.75s ease;
 }
 .restaurant-card .restaurant-name {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.restaurant-card .restaurant-name {
   font-family: "shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 400;
+  padding: 0;
+  padding-top: 20px;
 }
 .restaurant-card .menu-title {
   font-size: 16px;
@@ -324,6 +346,8 @@ img {
   justify-content: space-between;
   align-items: center;
   height: 72px;
+  width: 100%;
+  filter: drop-shadow(0px 4.01px 15.04px rgba(0, 0, 0, 0.1));
 }
 .restaurant-card .card-content {
   display: flex;
@@ -346,6 +370,14 @@ img {
   text-wrap: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.restaurant-card .commander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.restaurant-card .btn {
+  width: 190px;
 }
 
 /** media queries desktop version)**/
