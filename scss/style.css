@@ -59,7 +59,7 @@
   border-radius: 20px;
 }
 
-.header .header-title {
+.header-title {
   font-family: "Shrikhand", serif;
   display: flex;
   justify-content: center;
@@ -67,13 +67,15 @@
 }
 
 .header .logo {
+  z-index: 10;
   background-color: #FFFFFF;
-  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
   background-color: #F3F3F3;
-  gap: 15px;
 }
 .header .header .search {
   border: none;
@@ -83,6 +85,7 @@
 }
 
 .nav {
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,8 +295,49 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 10px;
+  padding-bottom: 20px;
   gap: 40px;
+}
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.restaurant-card .card {
+  opacity: 0;
+  animation: fadeInFromTop 0.6s ease forwards;
+}
+.restaurant-card .entrees .card:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.restaurant-card .entrees .card:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.restaurant-card .entrees .card:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+.restaurant-card .plats .card:nth-of-type(1) {
+  animation-delay: 0.6s;
+}
+.restaurant-card .plats .card:nth-of-type(2) {
+  animation-delay: 1s;
+}
+.restaurant-card .plats .card:nth-of-type(3) {
+  animation-delay: 1.2s;
+}
+.restaurant-card .desserts .card:nth-of-type(1) {
+  animation-delay: 1.4s;
+}
+.restaurant-card .desserts .card:nth-of-type(2) {
+  animation-delay: 1.6s;
+}
+.restaurant-card .desserts .card:nth-of-type(3) {
+  animation-delay: 1.8s;
 }
 .restaurant-card .heart {
   position: absolute;
@@ -312,21 +356,27 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.75s ease;
+  transition: all 0.75s ease;
   transform: translateX(100%);
   opacity: 0;
 }
 .restaurant-card .checkmark .price {
-  transition: transform 0.75s ease;
+  transition: all 0.75s ease;
 }
 .restaurant-card .checkmark .checkmark i {
   font-size: 18px;
+}
+.restaurant-card .card {
+  overflow: hidden;
+}
+.restaurant-card .card:hover .price {
+  transition: all 0.75s ease;
 }
 .restaurant-card .card:hover .checkmark {
   transform: translateX(0);
   opacity: 1;
   width: 60px;
-  transition: transform 0.75s ease;
+  transition: all 0.75s ease;
 }
 .restaurant-card .restaurant-name {
   padding-top: 25px;
@@ -360,6 +410,11 @@ img {
   gap: 5px;
   padding: 15px;
   overflow: hidden;
+}
+.restaurant-card .card-content p {
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .restaurant-card .price {
   padding: 15px;
@@ -450,6 +505,11 @@ img {
     position: absolute;
     top: 25px;
     left: 25px;
+  }
+  .restaurant-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer {
     flex-direction: row-reverse;

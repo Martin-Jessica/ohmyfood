@@ -1,20 +1,21 @@
-.header .header-title {
+.header-title {
     font-family: "Shrikhand", serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
 
   .header .logo {
+    z-index: 10;
     background-color: $card-color;
-    filter: $drop-shadow;
-    
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+
   }
 
   .header {
+    display: flex;
+    flex-direction: column;
     background-color: $base-color;
-    gap:15px;
     
       .header .search {
         border: none;
@@ -27,6 +28,7 @@
 
 
 .nav {
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;

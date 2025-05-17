@@ -14,12 +14,40 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 10px;
+    padding-bottom: 20px;
     gap: 40px;
+
+    @keyframes fadeInFromTop {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .card {
+    opacity: 0;
+    animation: fadeInFromTop 0.6s ease forwards;
+    }
+
+    .entrees .card:nth-of-type(1) { animation-delay: 0s; }
+    .entrees .card:nth-of-type(2) { animation-delay: 0.2s; }
+    .entrees .card:nth-of-type(3) { animation-delay: 0.4s; }
+
+    .plats .card:nth-of-type(1) { animation-delay: 0.6s; }
+    .plats .card:nth-of-type(2) { animation-delay: 1.0s; }
+    .plats .card:nth-of-type(3) { animation-delay: 1.2s; }
+
+    .desserts .card:nth-of-type(1) { animation-delay: 1.4s; }
+    .desserts .card:nth-of-type(2) { animation-delay: 1.6s; }
+    .desserts .card:nth-of-type(3) { animation-delay: 1.8s; }
+
 
     .heart {
         position: absolute;
-
             &.top-right {
                 left: auto;
                 right: 25px;
@@ -36,25 +64,37 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: transform 0.75s ease;
+        transition: all 0.75s ease;
         transform: translateX(100%); 
         opacity: 0;
 
         .price {
-            transition: transform 0.75s ease;
+            transition: all 0.75s ease;
         }
 
         .checkmark i {
             font-size: 18px;
         }
       }
-      
-      .card:hover .checkmark {
-        transform: translateX(0); 
-        opacity: 1;
-        width: 60px;
-        transition: transform 0.75s ease;
+
+      .card {
+        overflow: hidden;
       }
+      
+      .card:hover {
+
+        .price {
+            transition: all 0.75s ease;
+        }
+        .checkmark {
+            transform: translateX(0); 
+            opacity: 1;
+            width: 60px;
+            transition: all 0.75s ease;
+        }
+    }
+
+
       
       .restaurant-name {
         padding-top: 25px;
@@ -96,7 +136,11 @@ img {
         padding: 15px;
         overflow: hidden;
         
-        
+        p {
+            text-wrap: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
     
      .price {
