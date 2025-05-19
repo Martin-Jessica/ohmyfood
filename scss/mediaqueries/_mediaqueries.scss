@@ -19,8 +19,8 @@
 
     .fonctionnement {
         margin: auto;
-        padding-right: 180px;
-        padding-left: 180px;
+        padding-right: 50px;
+        padding-left: 50px;
         padding-top: 50px;
         padding-bottom: 50px;
         gap: 25px;
@@ -35,7 +35,6 @@
             justify-content: space-between ;
             width: 100%;
             gap: 50px;
-
         }
 
         .card-info {
@@ -53,11 +52,12 @@
     }
 
     .restaurant {
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-right: 180px;
-        padding-left: 180px;
+        padding-right: 50px;
+        padding-left: 50px;
         padding-top: 50px;
         padding-bottom: 50px;
         margin: auto;
@@ -83,35 +83,29 @@
         left: 25px;
     }
 
-
+    .restaurant-pic img{
+        width: 100%;
+        height: 383px;
+        object-fit: cover;
+    }
     .restaurant-card {
+        margin-top: -2%;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     
     }
 
+    .restaurant-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .entrees, .plats, .desserts{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
     
     .footer {
         flex-direction: row-reverse;
@@ -127,7 +121,29 @@
         }
     }
 
-    
+}
 
 
+@media screen and (min-width: 1440px) {
+
+    .fonctionnement {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .restaurant {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .fonctionnement {
+        padding: 50px;
+    }
+
+    .restaurant {
+        padding: 50px;
+    }
 }

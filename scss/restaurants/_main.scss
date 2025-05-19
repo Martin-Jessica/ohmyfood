@@ -75,7 +75,7 @@ img {
         .checkmark i {
             font-size: 18px;
         }
-      }
+    }
 
       .card {
         overflow: hidden;
@@ -107,17 +107,24 @@ img {
         font-weight: 400;
         padding: 0;
         padding-top: 20px;
-        
-
     }
-
 
     .menu-title {
         font-size: 16px;
         font-weight: 300;
-        border-bottom: 3px $tertiary-color solid;
-        
-        
+        padding-bottom: 5px;    
+        position: relative;
+        display: inline-block;
+    }
+
+    .menu-title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background-color: $tertiary-color;
     }
 
     .card {
