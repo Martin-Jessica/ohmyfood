@@ -5,6 +5,14 @@
     align-items: center;
   }
 
+  .fa-arrow-left {
+    font-size: 18px;
+  }
+
+  .arrow-menu {
+    position: relative;
+  }
+
   .header .logo {
     z-index: 10;
     background-color: $card-color;

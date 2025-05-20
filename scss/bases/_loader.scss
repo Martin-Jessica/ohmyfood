@@ -1,0 +1,53 @@
+.loading {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    animation: hideLoader 3s ease forwards;
+
+    
+    @keyframes hideLoader {
+    0%, 90% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+    
+}
+
+.wave-loader {
+        font-size: 35px;
+        font-weight: bold;
+        background: linear-gradient(to bottom, #FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        animation: waveText 2s ease-in-out infinite;
+    }
+
+    span {
+        font-family: "Shrikhand", serif;
+        display: inline-block;
+    }
+
+    
+@keyframes waveText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

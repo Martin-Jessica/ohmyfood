@@ -22,10 +22,12 @@
   .fonctionnement {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 25px;
     font-family: "roboto", sans-serif;
     font-weight: 500;
     padding: 15px;
+    max-width: 1440px;
 
       .info {
         @include center;
@@ -72,15 +74,20 @@
         padding-left: 10px;
       }
   }
- 
+
   .restaurant {
+    width: 100vw;
+    background-color:  #F6F6F6;
+  }
+ 
+  .restaurant-container {
     background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
     gap: 20px;
-
+    max-width: 1440px;
   }
 
   .restaurant .restaurant-card {
