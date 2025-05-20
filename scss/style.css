@@ -527,10 +527,17 @@ img {
        object-fit: cover;
   }
   .restaurant-card {
-    margin-top: -2%;
-    width: 90%;
+    margin-top: -50px;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
+  }
+  .restaurant-card .heart {
+    position: absolute;
+  }
+  .restaurant-card .heart.top-right {
+    right: 30%;
+    top: 30px;
   }
   .restaurant-name {
     display: flex;
@@ -538,8 +545,8 @@ img {
     align-items: center;
   }
   .entrees, .plats, .desserts {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .footer {
     flex-direction: row-reverse;
@@ -555,12 +562,8 @@ img {
 }
 @media screen and (min-width: 1440px) {
   .fonctionnement {
-    margin-left: 200px;
+    margin-left: 180px;
     margin-right: 180px;
-  }
-  .restaurant {
-    padding-left: 180px;
-    padding-right: 180px;
   }
 }
 @media screen and (min-width: 768px) {
