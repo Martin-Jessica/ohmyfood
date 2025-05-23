@@ -578,7 +578,7 @@ img {
     gap: 15px;
   }
 }
-.loading {
+.loader {
   position: fixed;
   z-index: 99999;
   top: 0;
@@ -590,7 +590,7 @@ img {
   justify-content: center;
   align-items: center;
   inset: 0;
-  animation: hideLoader 3s ease forwards;
+  animation: hideLoader 4s ease forwards;
 }
 @keyframes hideLoader {
   0%, 90% {
@@ -603,26 +603,93 @@ img {
   }
 }
 
-.wave-loader {
+.loader span {
   font-size: 35px;
   font-weight: bold;
+  font-family: "Shrikhand", serif;
+  letter-spacing: 1rem;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
-  animation: waveText 2s ease-in-out infinite;
-}
-
-span {
-  font-family: "Shrikhand", serif;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
   display: inline-block;
+  animation: animletters 1.5s infinite ease-in-out;
 }
 
-@keyframes waveText {
-  0%, 100% {
+.loader span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.loader span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.loader span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.loader span:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.loader span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+.loader span:nth-child(8) {
+  animation-delay: 1.4s;
+}
+
+.loader span:nth-child(9) {
+  animation-delay: 1.6s;
+}
+
+.loader span:nth-child(10) {
+  animation-delay: 1.8s;
+}
+
+.loader span:nth-child(11) {
+  animation-delay: 2s;
+}
+
+.loader span:nth-child(12) {
+  animation-delay: 2.2s;
+}
+
+.loader span:nth-child(13) {
+  animation-delay: 2.4s;
+}
+
+.loader span:nth-child(14) {
+  animation-delay: 2.6s;
+}
+
+.loader span:nth-child(15) {
+  animation-delay: 2.8s;
+}
+
+@keyframes animletters {
+  0% {
     transform: translateY(0);
   }
-  50% {
-    transform: translateY(-10px);
+  33% {
+    transform: translateY(-12px);
+  }
+  66% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
