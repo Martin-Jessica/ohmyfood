@@ -22,24 +22,22 @@
       visibility: hidden;
     }
   }
-
-    
 }
 
-
-
     .loader span {
-      font-size: 35px;
+      font-size: 25px;
       font-weight: bold;
       font-family: "Shrikhand", serif;
       letter-spacing: 1rem;
       background: linear-gradient(to bottom, #FF79DA, #9356DC);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       display: flex;
       flex-direction: row;
       position: relative;
       justify-content: space-between;
+      flex-wrap: nowrap;
      
       display: inline-block;
       animation: animletters 1.5s infinite ease-in-out;
@@ -47,7 +45,6 @@
     
     }
 
-    
     .loader span:nth-child(1) { animation-delay: 0s; }
     .loader span:nth-child(2) { animation-delay: 0.2s; }
     .loader span:nth-child(3) { animation-delay: 0.4s; }
@@ -63,9 +60,6 @@
     .loader span:nth-child(13) { animation-delay: 2.4s; }
     .loader span:nth-child(14) { animation-delay: 2.6s; }
     .loader span:nth-child(15) { animation-delay: 2.8s; }
-
-
-
 
     @keyframes animletters {
       0% {

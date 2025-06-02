@@ -4,32 +4,6 @@
   box-sizing: border-box;
 }
 
-.heart {
-  font-size: 22px;
-  position: relative;
-}
-.heart .fa-heart {
-  position: absolute;
-  top: 0;
-  left: -16px;
-  transition: all 0.3s ease-in-out;
-}
-.heart .fa-solid {
-  opacity: 0;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-.heart:hover .fa-solid {
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-.heart:hover .fa-regular {
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-
 .btn {
   padding: 15px;
   height: 50px;
@@ -182,7 +156,7 @@
 }
 
 .restaurant {
-  width: 100vw;
+  width: 100%;
   background-color: #F6F6F6;
 }
 
@@ -249,6 +223,33 @@
   position: absolute;
   top: 15px;
   right: 15px;
+}
+
+.heart {
+  font-size: 22px;
+  position: relative;
+}
+.heart .fa-heart {
+  position: absolute;
+  top: 0;
+  left: -16px;
+  transition: all 0.3s ease-in-out;
+}
+.heart .fa-solid {
+  opacity: 0;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.heart:hover .fa-solid {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.heart:hover .fa-regular {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer {
@@ -604,17 +605,19 @@ img {
 }
 
 .loader span {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   font-family: "Shrikhand", serif;
   letter-spacing: 1rem;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
   flex-direction: row;
   position: relative;
   justify-content: space-between;
+  flex-wrap: nowrap;
   display: inline-block;
   animation: animletters 1.5s infinite ease-in-out;
 }
