@@ -590,6 +590,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   inset: 0;
   animation: hideLoader 4s ease forwards;
 }

@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     inset: 0;
     animation: hideLoader 4s ease forwards;
 
@@ -23,7 +24,6 @@
     }
   }
 }
-
     .loader span {
       font-size: 25px;
       font-weight: bold;
@@ -38,7 +38,6 @@
       position: relative;
       justify-content: space-between;
       flex-wrap: nowrap;
-     
       display: inline-block;
       animation: animletters 1.5s infinite ease-in-out;
         
